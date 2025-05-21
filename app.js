@@ -7,9 +7,9 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Параметри підключення до MongoDB
-const uri = "mongodb+srv://IS_Admin:db_password@hillelqatechpro.lcrcl1a.mongodb.net/?retryWrites=true&w=majority&appName=HillelQATechPro"
+const uri = "mongodb+srv://<username>:<password>@<your-cluster>.mongodb.net/?retryWrites=true&w=majority&appName=HillelCluster"
 const client = new MongoClient(uri);
-const dbName = "HW_25"; // Назва вашої бази даних
+const dbName = "sample_airbnb"; // Назва вашої бази даних
 
 // Змінна для збереження підключення до бази даних
 let db;
